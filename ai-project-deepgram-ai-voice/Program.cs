@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 var apiKey = "28a2894ae72a89a3473e274db923cc49";
-var filePath = "test.mp3";
+var filePath = "seungmin.mp3";
 
 if(!File.Exists(filePath))
 {
@@ -23,9 +23,14 @@ try
 {
     var doc = JsonDocument.Parse(json);
     var transcription = doc.RootElement.GetProperty("channel").GetProperty("alternatives")[0].GetProperty("transcript").GetString();
+    Console.WriteLine();
+    Console.WriteLine("Transcription:\n");
+    Console.WriteLine(transcription);
 }
-catch (Exception)
+catch (Exception ex)
 {
-
-	throw;
+    Console.WriteLine("Json Çözümleme sırasında hata yapılmıştır.");
+    Console.WriteLine(ex.Message);
+    Console.WriteLine("JSON içeriği:\n");
+    throw;
 }
