@@ -22,7 +22,7 @@ var json = await response.Content.ReadAsStringAsync();
 try
 {
     var doc = JsonDocument.Parse(json);
-    var transcription = doc.RootElement.GetProperty("channel").GetProperty("alternatives")[0].GetProperty("transcript").GetString();
+    var transcription = doc.RootElement.GetProperty("results").GetProperty("channels").GetProperty("alternatives")[0].GetProperty("transcript").GetString();
     Console.WriteLine();
     Console.WriteLine("Transcription:\n");
     Console.WriteLine(transcription);
