@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ai-project-deepgram-ai-voice", "ai-project-deepgram-ai-voice\ai-project-deepgram-ai-voice.csproj", "{A4D9521C-F366-4F63-B6A0-C31DB3FE2952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ai-project-huggingface-sentimentanalysis", "ai-project-huggingface-sentimentanalysis\ai-project-huggingface-sentimentanalysis.csproj", "{51235722-A6A0-404D-A71D-B675FEFA371A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A4D9521C-F366-4F63-B6A0-C31DB3FE2952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D9521C-F366-4F63-B6A0-C31DB3FE2952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D9521C-F366-4F63-B6A0-C31DB3FE2952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51235722-A6A0-404D-A71D-B675FEFA371A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51235722-A6A0-404D-A71D-B675FEFA371A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51235722-A6A0-404D-A71D-B675FEFA371A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51235722-A6A0-404D-A71D-B675FEFA371A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
