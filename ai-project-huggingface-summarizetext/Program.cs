@@ -21,6 +21,6 @@ client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bear
 var response = await client.PostAsync("https://api-inference.huggingface.co/models/facebook/bart-large-cnn", content);
 var responseContent = await response.Content.ReadAsStringAsync();
 
-Console
+Console.WriteLine("Text Summarize: ");
 Console.WriteLine(responseContent);
 
