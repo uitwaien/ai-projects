@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ai-project-huggingface-sent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ai-project-huggingface-summarizetext", "ai-project-huggingface-summarizetext\ai-project-huggingface-summarizetext.csproj", "{F21E5072-5789-4621-93C5-1B42F8CDE7E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ai-project-huggingface-namedentityrecognition", "ai-project-huggingface-namedentityrecognition\ai-project-huggingface-namedentityrecognition.csproj", "{F3031ECE-6876-491F-AE45-27446ADF3028}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F21E5072-5789-4621-93C5-1B42F8CDE7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F21E5072-5789-4621-93C5-1B42F8CDE7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F21E5072-5789-4621-93C5-1B42F8CDE7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3031ECE-6876-491F-AE45-27446ADF3028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3031ECE-6876-491F-AE45-27446ADF3028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3031ECE-6876-491F-AE45-27446ADF3028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3031ECE-6876-491F-AE45-27446ADF3028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
