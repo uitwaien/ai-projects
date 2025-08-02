@@ -35,8 +35,8 @@ class program
                 double score = Math.Round(item.GetProperty("score").GetDouble() * 100, 2);
 
                 Console.WriteLine($" --> {word}");
-                Console.WriteLine($"     Entity Type: {entityType}");
-                Console.WriteLine($"     Score: {score}%");
+                Console.WriteLine($"     Türü: {entityType}");
+                Console.WriteLine($"     Güven: %{score}");
             }
         }
 
