@@ -39,6 +39,21 @@ class Program
             var json = JsonSerializer.Serialize(requestBody);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await client.PostAsync("https://api-inference.huggingface.co/models/roberta-base-squad2", content);
+
+            var responseString = await response.Content.ReadAsStringAsync();
+            var doc = JsonDocument.Parse(responseString);
+
+            if(doc.RootElement.TryGetProperty("answer", out var answer))
+            {
+                Console.WriteLine($"Soru: " + question);
+                Console.WriteLine($"Metin: " + context);
+                Console.WriteLine($"Cevap: " + answer.GetString);
+            }
+            else
+            {
+                Console.WriteLine("No answer found.");
+                Console.WriteLine(responseString);
+            }
         }
 
         Console.WriteLine();
