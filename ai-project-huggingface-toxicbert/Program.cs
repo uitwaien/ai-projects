@@ -36,10 +36,8 @@ class Program
                 string label = item.GetProperty("label").GetString();
                 double score = Math.Round(item.GetProperty("score").GetDouble() * 100, 2);
 
-                if (score >= 50)
-                {
-                    Console.WriteLine($"{label.ToUpper()} -->  %{score}");
-                }
+                Console.WriteLine($"{label.ToUpper()} -->  %{score}");
+
             }
         }
     }
